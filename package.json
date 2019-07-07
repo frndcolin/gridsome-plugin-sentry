@@ -1,11 +1,10 @@
 {
   "name": "gridsome-plugin-sentry",
-  "version": "1.0.0",
+  "version": "0.0.1",
+  "author": "Colin Friend <frnd.colin@gmail.com>",
   "description": "Sentry error tracking for Gridsome project",
+  "homepage": "https://github.com/frndcolin/gridsome-plugin-sentry#readme",
   "main": "gridsome.client.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "dependencies": {
     "@sentry/browser": "^5.3.0",
     "@sentry/integrations": "^5.3.1"
@@ -15,16 +14,13 @@
     "url": "git+https://github.com/frndcolin/gridsome-plugin-sentry.git"
   },
   "keywords": [
-    "Sentry",
-    "Gridsome",
-    "error",
-    "tracking",
-    "Vue"
+    "gridsome",
+    "gridsome-plugin",
+    "sentry",
+    "vue"
   ],
-  "author": "Colin Friend <frnd.colin@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/frndcolin/gridsome-plugin-sentry/issues"
-  },
-  "homepage": "https://github.com/frndcolin/gridsome-plugin-sentry#readme"
+  }
 }

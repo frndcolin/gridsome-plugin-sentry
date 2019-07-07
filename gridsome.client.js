@@ -4,11 +4,11 @@ import * as Integrations from '@sentry/integrations'
 export default function(Vue, options) {
   if(process.isClient) {
     Sentry.init({
-      dsn: options.url,
+      dsn: options.dsn,
       integrations: [
         new Integrations.Vue({
           Vue,
-          attachProps: true,
+          attachProps: options.attachProps || true,
         }),
       ],
     })
