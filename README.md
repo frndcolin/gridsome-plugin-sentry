@@ -3,6 +3,7 @@ Make error tracking in your next Gridsome project easier than ever.
 
 ## Install
 * `npm install gridsome-plugin-sentry --save`
+*`yarn add gridsome-plugin-sentry`
 
 ## Usage
 Add the following to the gridsome.config.js to initallize Sentry error tracking
