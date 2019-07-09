@@ -21,14 +21,14 @@ module.exports = {
   ]
 }
 ```
-1 For a quick and easy test, add the following to any component that is included in your index page
+1. For a quick and easy test, add the following to any component that is included in your index page
 ```javascript
 mounted () {
   throw 'testing Sentry connection';
 }
 ```
-2 Run `npm run develop` from the root directory
-3 Navigate to your Sentry dashboard and confirm the error was captured
+2. Run `npm run develop` from the root directory
+3. Navigate to your Sentry dashboard and confirm the error was captured
 
 ## Further Info
 New to Sentry? Check out [sentry.io](https://sentry.io/welcome/ "Sentry IO")
