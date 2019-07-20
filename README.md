@@ -1,9 +1,6 @@
 <p style="text-align: center">
-  <a href="https://www.npmjs.com/package/vuetify">
-    <img src="https://img.shields.io/npm/dt/vuetify.svg" alt="Downloads">
-  </a>
-  <a href="https://www.npmjs.com/package/vuetify">
-    <img src="https://img.shields.io/npm/dm/vuetify.svg" alt="Downloads">
+  <a href="https://www.npmjs.com/package/gridsome-plugin-sentry">
+    <img src="https://img.shields.io/npm/dt/gridsome-plugin-sentry.svg?color=orange&style=for-the-badge" alt="Downloads">
   </a>
 </p>
 # Sentry plugin for error tracking in Gridsome projects
