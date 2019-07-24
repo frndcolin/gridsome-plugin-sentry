@@ -3,6 +3,7 @@
     <img src="https://img.shields.io/npm/dt/gridsome-plugin-sentry.svg?color=orange&style=for-the-badge" alt="Downloads">
   </a>
 </p>
+
 # Sentry plugin for error tracking in Gridsome projects
 Make error tracking in your next Gridsome project easier than ever. 
 
