@@ -12,7 +12,7 @@ Make error tracking in your next Gridsome project easier than ever.
 * `yarn add gridsome-plugin-sentry`
 
 ## Usage
-Add the following to the gridsome.config.js to initallize Sentry error tracking
+Add the following to the gridsome.config.js to initialize Sentry error tracking
 
 ```javascript
 module.exports = {
@@ -21,7 +21,8 @@ module.exports = {
       use: 'gridsome-plugin-sentry',
       options: {
         dsn: 'sentry.url',
-        attachProps: true // defaults to true
+        attachProps: true, // defaults to true
+        logErrors: process.env.NODE_ENV === 'development' // only log errors to console in development
       }
     }
   ]
