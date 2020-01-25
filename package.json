@@ -1,6 +1,6 @@
 {
   "name": "gridsome-plugin-sentry",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Colin Friend <frnd.colin@gmail.com>",
   "description": "Sentry error tracking for Gridsome project",
   "homepage": "https://github.com/frndcolin/gridsome-plugin-sentry#readme",

@@ -5,14 +5,14 @@
 </p>
 
 # Sentry plugin for error tracking in Gridsome projects
-Make error tracking in your next Gridsome project easier than ever. 
+Make error tracking in your next Gridsome project easier than ever.
 
 ## Install
 * `npm install gridsome-plugin-sentry --save`
 * `yarn add gridsome-plugin-sentry`
 
 ## Usage
-Add the following to the gridsome.config.js to initialize Sentry error tracking
+Add the following to the gridsome.config.js to initalize Sentry error tracking
 
 ```javascript
 module.exports = {
@@ -21,8 +21,8 @@ module.exports = {
       use: 'gridsome-plugin-sentry',
       options: {
         dsn: 'sentry.url',
-        attachProps: true, // defaults to true
-        logErrors: process.env.NODE_ENV === 'development' // only log errors to console in development
+        attachProps: true // defaults to true
+        logErrors: process.env.NODE_ENV === 'development' // defaults to false, see below for further info
       }
     }
   ]
@@ -39,5 +39,12 @@ mounted () {
 
 ## Further Info
 New to Sentry? Check out [sentry.io](https://sentry.io/welcome/ "Sentry IO")
+
+### logErrors option
+By default Sentry will not call the internal logError function of Vue and will not be seen in the developers console. You can enable logging errors in the browsers development console with any statement that evaluates to a boolean. See [Vue integration docs for more info](https://docs.sentry.io/platforms/javascript/vue/)
+
+### Silencing errors from `localhost`
+If you want Sentry to ignore events from `localhost` or any specific IP address you can do so from your Sentry dashboard with inbound filters.
+From you dashboard, `Settings -> Projects -> 'Project Name' -> Inbound Filters`
 
 Configuration options and examples, [docs.sentry.io](https://docs.sentry.io/platforms/javascript/vue/ "Vue config for Sentry IO")
