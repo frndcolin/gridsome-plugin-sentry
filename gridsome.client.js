@@ -9,6 +9,7 @@ export default function(Vue, options) {
         new Integrations.Vue({
           Vue,
           attachProps: options.attachProps || true,
+          logErrors: options.logErrors || false
         }),
       ],
     })
