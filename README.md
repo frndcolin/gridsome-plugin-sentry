@@ -20,8 +20,8 @@ module.exports = {
     {
       use: 'gridsome-plugin-sentry',
       options: {
-        dsn: 'sentry.url',
-        attachProps: true // defaults to true
+        dsn: 'replace with your Sentry DSN URL',
+        attachProps: true, // defaults to true
         logErrors: process.env.NODE_ENV === 'development' // defaults to false, see below for further info
       }
     }
